@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.2 on win32)" generated="2026-07-01T11:38:33.581879" rpa="false" schemaversion="5">
+<suite id="s1" name="Task-19" source="C:\Users\Sreelekha\PycharmProjects\PythonProject2\PythonProject1\Robot_Framework_Project\TestCases\Task-19.robot">
+<test id="s1-t1" name="Verify Login Functionality" line="11">
+<kw name="Open Application">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-07-01T11:38:34.020127" level="INFO">Opening browser 'chrome' to base url 'https://robotsparebinindustries.com'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-07-01T11:38:34.019422" elapsed="2.195322"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-07-01T11:38:36.215735" elapsed="0.657307"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-07-01T11:38:38.874431" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-07-01T11:38:36.873524" elapsed="2.001202"/>
+</kw>
+<status status="PASS" start="2026-07-01T11:38:34.017888" elapsed="4.857142"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-07-01T11:38:38.877126" level="INFO">Typing text 'maria' into text field 'id=username'.</msg>
+<arg>id=username</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-07-01T11:38:38.875929" elapsed="0.164542"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-07-01T11:38:39.041759" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2026-07-01T11:38:39.100107" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-07-01T11:38:39.041109" elapsed="0.140205"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-07-01T11:38:39.183132" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<arg>xpath=//button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-07-01T11:38:39.182221" elapsed="0.148154"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-07-01T11:38:42.332500" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-07-01T11:38:39.331178" elapsed="3.001701"/>
+</kw>
+<kw name="Verify Successful Login">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-07-01T11:38:42.373786" level="INFO">Element 'xpath=//button[@id='logout']' is displayed.</msg>
+<arg>xpath=//button[@id='logout']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-07-01T11:38:42.334816" elapsed="0.039143"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-07-01T11:38:44.376208" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-07-01T11:38:42.374244" elapsed="2.002177"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-07-01T11:38:44.394152" level="INFO">Current page contains text 'maria'.</msg>
+<arg>${USERNAME}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-07-01T11:38:44.377101" elapsed="0.017225"/>
+</kw>
+<status status="PASS" start="2026-07-01T11:38:42.333975" elapsed="2.060557"/>
+</kw>
+<kw name="Logout">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-07-01T11:38:44.396356" level="INFO">Clicking button 'xpath=//button[@id='logout']'.</msg>
+<arg>xpath=//button[@id='logout']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-07-01T11:38:44.395907" elapsed="0.111700"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-07-01T11:38:47.509179" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-07-01T11:38:44.507874" elapsed="3.001564"/>
+</kw>
+<status status="PASS" start="2026-07-01T11:38:44.395249" elapsed="3.114447"/>
+</kw>
+<kw name="Close Application">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-07-01T11:38:47.512548" elapsed="2.382235"/>
+</kw>
+<status status="PASS" start="2026-07-01T11:38:47.511126" elapsed="2.384006"/>
+</kw>
+<status status="PASS" start="2026-07-01T11:38:34.016798" elapsed="15.879132"/>
+</test>
+<status status="PASS" start="2026-07-01T11:38:33.584365" elapsed="16.313858"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Task-19" id="s1" pass="1" fail="0" skip="0">Task-19</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
